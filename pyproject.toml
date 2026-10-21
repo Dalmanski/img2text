@@ -1,0 +1,25 @@
+[project]
+name = "img2text"
+version = "1.0.0"
+description = "Extract text, tables and layout from screenshots and images."
+readme = "README.md"
+license = { file = "LICENSE.md" }
+authors = [{ name = "Dalmanski" }]
+requires-python = ">=3.12"
+dependencies = [
+    "flet==1.0.4",
+    "flet-desktop==1.0.4",
+    "rapidocr-onnxruntime>=1.4.4",
+    "onnxruntime>=1.20",
+    "opencv-python>=4.9",
+    "numpy>=1.26",
+]
+
+[tool.flet]
+product = "img2text"
+company = "Dalmanski"
+copyright = "Copyright (c) 2026 Dalmanski"
+
+[tool.flet.app]
+path = "."
+module = "app"
